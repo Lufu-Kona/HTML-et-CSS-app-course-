@@ -1,0 +1,80 @@
+.Parentcontainer {
+    display: flex;
+    background-color: rgb(66, 40, 40);
+    color: white;
+
+}
+
+.childrenContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(17, 16, 16);
+    color: white;
+
+}
+
+.pContainer {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: 20px;
+    flex-wrap: wrap;
+    background-color: brown;
+    padding: 10px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    border-width: 5px;
+
+}
+
+.newTitle {
+    display: flex;
+    width: 300px;
+
+}
+
+#titleOne {
+    display: flex;
+    background-color: rgb(164, 164, 4);
+    color: white;
+
+
+}
+
+button {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(30, 30, 137);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+#titleTwo {
+    display: flex;
+    background-color: rgb(17, 17, 150);
+    color: white;
+
+}
+
+#titleThree {
+    display: flex;
+    background-color: rgb(184, 134, 11);
+    color: white;
+
+}
+
+#titleFour {
+    display: flex;
+    background-color: rgb(18, 114, 18);
+    color: white;
+
+}
