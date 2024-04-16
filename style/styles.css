@@ -7,7 +7,7 @@
 
 .childrenContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     background-color: rgb(17, 16, 16);
     color: white;
 
@@ -58,23 +58,23 @@ h1 {
 
 }
 
-#titleTwo {
-    display: flex;
-    background-color: rgb(17, 17, 150);
-    color: white;
 
-}
 
-#titleThree {
-    display: flex;
-    background-color: rgb(184, 134, 11);
-    color: white;
 
-}
 
-#titleFour {
-    display: flex;
-    background-color: rgb(18, 114, 18);
-    color: white;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

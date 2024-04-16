@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Facture</title>
+    <script>
+        let i=1;
+        function addProduit(){
+            let tr = document.createElement('tr');
+            let tdNom = document.createElement('td');
+            let tdPrix = document.createElement('td');
+            let tdQuant = document.createElement('td');
+            let inputNom = document.createElement('input');
+            let inputPrix = document.createElement('input');
+            let inputQuant = document.createElement('input');
+            inputNom.setAttribute('class','form-control');
+            inputPrix.setAttribute('class','form-control');
+            inputQuant.setAttribute('class','form-control');
+            inputNom.setAttribute('id','nom'+i);
+            inputPrix.setAttribute('id','prixU'+i);
+            inputQuant.setAttribute('id','quant'+i);
+            inputNom.setAttribute('placeholder','Nom du produit '+i);
+            inputPrix.setAttribute('placeholder','Prix unitare du produit '+i);
+            inputQuant.setAttribute('placeholder','Quantité du produit '+i);
+            i = i + 1;
+            tr.appendChild(tdNom);
+            tr.appendChild(tdPrix);
+            tr.appendChild(tdQuant);
+
+            tdNom.appendChild(inputNom);
+            tdPrix.appendChild(inputPrix);
+            tdQuant.appendChild(inputQuant);
+
+            let bo=document.getElementById('tbd');
+            bo.appendChild(tr);
+        }
+    </script>
+</head>
+<body>
+    <fieldset class="reset">
+        <legend class="reset">Informations de la commande</legend>
+        <div class="input-group mb-3">
+            <span class="input-group-text">ID</span>
+            <input type="text" class="form-control col-form-label" placeholder="Identifiant" id="idCom">
+            <span class="input-group-text">Date commande</span>
+            <input type="date" class="form-control" placeholder="Date de la commande" id="dateCom">
+        </div>
+    </fieldset>
+
+    <fieldset class="reset">
+        <legend class="reset">Informations du client</legend>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Nom</span>
+            <input type="text" class="form-control" placeholder="Nom du client" id="nom">
+            <span class="input-group-text">Prénom</span>
+            <input type="text" class="form-control" placeholder="Prenom du client" id="prenom">
+            <span class="input-group-text">Mail</span>
+            <input type="text" class="form-control" placeholder="Mail du client" id="mail">
+            <span class="input-group-text">Téléphone</span>
+            <input type="text" class="form-control" placeholder="Téléphone du client" id="telephone">
+        </div>
+    </fieldset>
+
+    <fieldset class="reset">
+        <legend class="reset">Liste des produits</legend>
+       <table class="table">
+        <thead>
+            <tr>
+                <th>Nom du produit</th><th>Prix unitaire</th><th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody id="tbd">
+            
+        </tbody>
+       </table>
+    </fieldset>
+    <button type="button" onclick="addProduit()">Ajouter un produit</button>
+</body>
+</html>
